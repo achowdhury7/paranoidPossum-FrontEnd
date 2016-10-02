@@ -8,7 +8,7 @@ angular
 				controller: 'MainCtrl',
 				resolve: {
 					postPromise : function(postFactory) {
-						return postFactory.getPosts;
+						return postFactory.getPosts();
 					}
 				}
 			});

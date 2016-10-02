@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 14px;
+}
+
+.row::after, .clearfix::after{
+	display: table;
+	content: " ";
+	clear: both;	
+}
+
+.row {	
+	margin-bottom: 2%;	
+	position: relative;
+	box-sizing:border-box;
+}
+
+.column {
+	position: relative;
+	float: left;
+}
+
+.column + .column {margin-left: 3%;}
+
+.col-art {width: 60%;}
+
+.col-attachment {width: 36%;}
+
+.page-header {		
+	padding-top: 2%;
+	padding-bottom: 2%;
+	background: #49274a;
+
+}
+
+.header {		
+	text-transform: uppercase;
+	font-family: 'Indie Flower', cursive;
+	color: #fff;
+	text-align: center;
+}
+
+h1, h2, h3, h4 { 
+	margin-top: 0; 
+	margin-bottom: 0;
+}
+
+.post-content {	
+	padding: 2%;	
+	margin-right: 3%;
+	margin-left: 3%;
+	background: rgba(197,193,192,0.7);
+}
+
+.background-container {
+	-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  z-index: -1;  
+  position: absolute;
+  left: 0;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.post-header {	
+	font-size: 1.25em;
+  background: #94618e;
+  width: 10%;
+  text-align: center;
+  padding: 1%;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.post-art {width: 100%;}
+
+
+.tag-pill {
+	color: #fff;
+	font-size: 0.8em;
+	display: inline-block;
+	padding: 1% 4%;	
+	border-radius: 20px;
+	background: #cf6766;
+}
