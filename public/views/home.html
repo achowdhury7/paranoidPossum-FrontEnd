@@ -2,7 +2,14 @@
 	<div class="post-container" ng-repeat="post in posts">
 		<div class="image-content" style="background-image: url({{post.image}});"></div>
 		<div class="text-content">
-			<div class="content-title">{{post.title}}</div>
+			<div class="content-title">
+				<h3>{{post.title}}</h3>
+				<h4 ng-show="{{post.subtitle}}"><span>"</span><span ng-bind-html="post.subtitle"></span><span>"</span></h4>
+			</div>
+			<div class="content-writeup">
+				<p ng-bind-html="post.writeUp">					
+				</p>
+			</div>
 		</div>
 	</div>
 </div>	

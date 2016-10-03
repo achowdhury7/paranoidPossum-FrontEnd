@@ -3,6 +3,10 @@ angular
 	.controller('MainCtrl', ['$scope', '$sce', 'postFactory', 'postPromise', function($scope, $sce, postFactory, postPromise) {
 		$scope.posts = postFactory.posts;
 
+		$scope.posts.forEach(function(post) {	
+			post.subtitle = $sce.trustAsHtml(post.subtitle);
+		})
+
 		$scope.posts.forEach(function(post) {
 			post.audio = $sce.trustAsHtml(post.audio);
 		})
