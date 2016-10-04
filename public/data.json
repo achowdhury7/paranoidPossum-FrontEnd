@@ -1,6 +1,11 @@
 {
 	"posts" : [
 	{
+		"title" : "Fishermen at sea",
+		"subtitle" : "It is an ancient Mariner, And he stoppeth one of three. 'By thy long grey beard and glittering eye, Now wherefore stopp'st thou me?",
+		"image" : "./images/painting3.jpg"
+	},	
+	{
 		"title" : "Time",
 		"subtitle" : "Time is the substance I am made of",
 		"image" : "./images/band.jpg",
@@ -11,18 +16,14 @@
 	
 	{
 		"title" : "Autumn Hug",
+		"subtitle" : "And I miss you, most of all, my darling, when autumn leaves start to fall",
 		"image" : "./images/painting.jpg"
 	},
 
 	{
-		"title" : "Turner",
+		"title" : "Turner",		
 		"image" : "./images/painting2.jpg"
-	},
-
-	{
-		"title" : "Fishermen at sea",
-		"image" : "./images/painting3.jpg"
-	}	
+	}
 		]
 }
 
