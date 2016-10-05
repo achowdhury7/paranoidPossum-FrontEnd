@@ -1,6 +1,6 @@
 angular
 	.module('paranoidPossumApp')
-	.controller('MainCtrl', ['$scope', '$sce', 'postFactory', 'postPromise', function($scope, $sce, postFactory, postPromise) {
+	.controller('MainCtrl', ['$scope', '$sce', 'postFactory', 'postListPromise', function($scope, $sce, postFactory, postListPromise) {
 		$scope.posts = postFactory.posts;
 
 		$scope.posts.forEach(function(post) {	
@@ -16,4 +16,5 @@ angular
 		})
 
 		console.log($scope.posts);
+
 	}]);

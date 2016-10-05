@@ -16,5 +16,13 @@ angular
 								
 		}; 
 
+		obj.getPost = function(id) {
+			return $http.get('data.json').then(function(response) {								
+				return response.data.posts.find(function(element) {
+					return element._id === id;
+				});				
+			});
+		};	
+
 		return obj;
 	}]);
