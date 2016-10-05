@@ -38,22 +38,24 @@ a {
 	flex-direction: column;
 }
 
-.page-header {		
+.page-header {	
+	width: 90%;
+	margin: auto;		 
 	padding-top: 3%;
 	padding-bottom: 3%;
 	background-color: #222224;
 }
 
-.header {		
+.header {
+	width: 40%;
+	margin: 0 auto;		
 	color: #fff;	
 	text-align: center;
 }
 
 .header > h1 {
 	display: block;
-	width: 40%;
-	padding-bottom: 3%;
-	margin: 0 auto; 
+	padding-bottom: 3%;	
 	border-bottom: 1px solid #dadfe1;	 
 	text-transform: uppercase;
 }
