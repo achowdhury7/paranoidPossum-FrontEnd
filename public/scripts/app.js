@@ -7,11 +7,22 @@ angular
 				templateUrl: './views/home.html',
 				controller: 'MainCtrl',
 				resolve: {
-					postPromise : function(postFactory) {
+					postListPromise : function(postFactory) {
 						return postFactory.getPosts();
 					}
 				}
-			});
+			})
+
+			.state('post', {
+				url: '/posts/{id}', 
+				templateUrl: './views/post.html',
+				controller: 'PostCtrl', 
+				resolve: {
+					postPromise : function($stateParams, postFactory) {
+						return postFactory.getPost($stateParams.id);
+					}
+				}
+			})
 
 		$urlRouterProvider.otherwise('home');	
 	}]);

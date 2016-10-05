@@ -16,5 +16,15 @@ angular
 								
 		}; 
 
+		obj.getPost = function(id) {
+			$http.get('data.json').then(function(response) {				
+				return response.data.posts.find(findObjectById(id));				
+			});
+		};	
+
+		var findObjectById = function(id) {
+			return this._id === id;
+		};
+
 		return obj;
 	}]);
