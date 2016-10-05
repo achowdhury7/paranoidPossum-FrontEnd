@@ -7,7 +7,7 @@ angular
 				templateUrl: './views/home.html',
 				controller: 'MainCtrl',
 				resolve: {
-					postListPromise : function(postFactory) {
+					postListPromise : function(postFactory) {						
 						return postFactory.getPosts();
 					}
 				}
@@ -19,7 +19,8 @@ angular
 				controller: 'PostCtrl', 
 				resolve: {
 					postPromise : function($stateParams, postFactory) {
-						return postFactory.getPost($stateParams.id);
+						// postFactory.getPost returns a promise
+						return postFactory.getPost($stateParams.id); 
 					}
 				}
 			})

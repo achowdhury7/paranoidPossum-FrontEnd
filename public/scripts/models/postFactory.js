@@ -17,12 +17,14 @@ angular
 		}; 
 
 		obj.getPost = function(id) {
-			$http.get('data.json').then(function(response) {				
-				return response.data.posts.find(findObjectById(id));				
+			return $http.get('data.json').then(function(response) {								
+				return response.data.posts.find(function(element) {
+					return element._id === id;
+				});				
 			});
 		};	
 
-		var findObjectById = function(id) {
+		var findObjectById = function(element) {
 			return this._id === id;
 		};
 
