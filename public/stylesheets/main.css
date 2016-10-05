@@ -45,9 +45,21 @@ a {
 }
 
 .header {		
-	color: #fff;
-	text-transform: uppercase;
+	color: #fff;	
 	text-align: center;
+}
+
+.header > h1 {
+	display: block;
+	width: 40%;
+	padding-bottom: 3%;
+	margin: 0 auto; 
+	border-bottom: 1px solid #dadfe1;	 
+	text-transform: uppercase;
+}
+
+.header > h3 {
+	padding-top: 3%;
 }
 
 .post-container {	
