@@ -61,12 +61,44 @@ a {
 	padding-top: 3%;
 }
 
-.back-button {
+.back {
 	position: absolute;	
 	top: 33%;
 	float: left;
 	margin-left: 20px;
+}
 
+.search {
+	position: absolute;	
+	top: 41%;
+	right: 0;
+	float: right;
+	margin-right: 20px;	
+}
+
+.fa {
+	font-size: 1.2em;
+}
+
+.search > input {
+	padding: 1%;
+	width: 0;
+	border: none;
+	border-bottom: 1px solid;
+}
+
+.search >input:focus {
+	width: 66%;
+	outline: none !important;	
+	border-bottom: 1px solid;
+}
+
+.search:hover > input {
+	width: 66%;
+	transition: all 1s ease;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
 }
 
 
@@ -79,7 +111,7 @@ a {
 	-webkit-animation: fadeIn 2s;
 	-moz-animation: fadeIn 2s;
 	-ms-animation: fadeIn 2s;
-	-0-animation: fadeIn 2s;
+	-o-animation: fadeIn 2s;
 	animation: fadeIn 2s;
 }
 

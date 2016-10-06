@@ -12,13 +12,17 @@
 	<body ng-app="paranoidPossumApp">
 		<div class="page-container">
 			<div class="page-header" ng-controller="HeaderCtrl">							
-				<div class="back-button">
+				<div class="back">
 					<a href="#/home"><i class="fa fa-angle-left fa-3x" ng-if="page === 'post'"></i></a>
 				</div>
 				<div class="header" ng-show="title">						
 					<h1 ng-bind="title"></h1>
 					<h3 ng-bind="subtitle"></h3>
-				</div>								
+				</div>	
+				<div class="search fa-1.2x">
+					<i class="fa fa-search"></i>
+					<input type="text" class="search-box">
+				</div>							
 			</div>			
 			<ui-view></ui-view>			
 		</div>
