@@ -5,11 +5,21 @@
 		<link href="https://fonts.googleapis.com/css?family=BioRhyme|Indie+Flower" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Copse|Josefin+Sans:600,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300|Crimson+Text:400,400italic" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
 	</head>
 	
 	<body ng-app="paranoidPossumApp">
-		<div class="page-container">			
+		<div class="page-container">
+			<div class="page-header" ng-controller="HeaderCtrl">							
+				<div class="back-button">
+					<a href="#/home"><i class="fa fa-angle-left fa-3x" ng-if="page === 'post'"></i></a>
+				</div>
+				<div class="header" ng-show="title">						
+					<h1 ng-bind="title"></h1>
+					<h3 ng-bind="subtitle"></h3>
+				</div>								
+			</div>			
 			<ui-view></ui-view>			
 		</div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -17,6 +27,7 @@
 		</script>
 		<script src="http://d2v52k3cl9vedd.cloudfront.net/plangular/3.1.0/plangular.min.js"></script>
 		<script type="text/javascript" src="./scripts/app.js"></script>
+		<script type="text/javascript" src="./scripts/controllers/HeaderCtrl.js"></script>
 		<script type="text/javascript" src="./scripts/controllers/MainCtrl.js"></script>
 		<script type="text/javascript" src="./scripts/controllers/PostCtrl.js"></script>
 		<script type="text/javascript" src="./scripts/models/postFactory.js"></script>

@@ -1,8 +1,4 @@
-<div class="blog-header" style="background-image: url('{{post.image}}')"></div>
+<div class="blog-header" style="background-image: url({{post.image}})"></div>
 <div class="blog-content">
-	<div class="content-header">
-		<h1>{{post.title}}</h1>
-		<h3>{{post.subtitle}}</h3>
-	</div>
-	
+	<p ng-bind-html="post.writeUp"></p>	
 </div>

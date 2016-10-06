@@ -3,6 +3,7 @@
 	{
 		"_id" : "1",
 		"title" : "Fishermen at sea",
+		"writeUp" : "The first oil painting Turner exhibited at the Royal Academy, this is a moonlit scene in the tradition of Horace Vernet, Philip de Loutherbourg and Joseph Wright of Derby. These painters were largely responsible for fuelling the 18th-century vogue for nocturnal subjects. The sense of the overwhelming power of nature is a key theme of the Sublime. The potency of the moonlight contrasts with the delicate vulnerability of the flickering lantern, emphasising nature’s power over mankind and the fishermen’s fate in particular. The jagged silhouettes on the left are the treacherous rocks called ‘the Needles’ off the Isle of Wight.",
 		"subtitle" : "It is an ancient Mariner, And he stoppeth one of three. 'By thy long grey beard and glittering eye, Now wherefore stopp'st thou me?",
 		"image" : "./images/painting3.jpg"
 	},	
@@ -20,7 +21,8 @@
 		"_id" : "3",
 		"title" : "Autumn Hug",
 		"subtitle" : "And I miss you, most of all, my darling, when autumn leaves start to fall",
-		"image" : "./images/painting.jpg"
+		"image" : "./images/painting.jpg",
+		"writeUp" : "A piece of art shows how an artist sees the world, interprets it and puts it on a canvas. It turns a pretty painting into a powerful source of energy which can inspire you; it can become a breath of fresh air in your busy life, or give you some comfort and make you relax when you look at it. It’s very difficult to say that all pretty paintings can give you these feelings because art is very diverse.  For this reason, while deciding on purchasing a piece of art you need to listen to your heart and see what kind of feelings and emotions are awakened when you look at it.  Do you want these feelings to be in your daily life? If you find a canvas that you want to continue looking at day after day, don’t hesitate- just buy it, because the energy it gives out is most likely what you need in your life."
 	},
 
 	{
