@@ -1,3 +1,12 @@
+<div class="page-header">							
+	<div class="back">
+		<a href="#/home"><i class="fa fa-angle-left fa-3x"></i></a>
+	</div>
+	<div class="header" ng-show="post.title">						
+		<h1 ng-bind="post.title"></h1>
+		<h3 ng-bind="post.subtitle"></h3>
+	</div>									
+</div>			
 <div class="blog-header" style="background-image: url({{post.image}})"></div>
 <div class="blog-content">
 	<p ng-bind-html="post.writeUp"></p>	

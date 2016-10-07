@@ -1,13 +1,7 @@
 angular
 	.module('paranoidPossumApp')
 	.controller('MainCtrl', ['$scope', '$rootScope', '$sce', 'postFactory', 'postListPromise', function($scope, $rootScope, $sce, postFactory, postListPromise) {
-		
-		$rootScope.$broadcast('header-update', {
-			page: 'home',
-			title: 'Paraniod Possum',
-			subtitle: 'Music, art and everything'
-		});
-		
+				
 		$scope.posts = postFactory.posts;
 
 		$scope.posts.forEach(function(post) {	

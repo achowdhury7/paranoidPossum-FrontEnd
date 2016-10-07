@@ -10,20 +10,7 @@
 	</head>
 	
 	<body ng-app="paranoidPossumApp">
-		<div class="page-container">
-			<div class="page-header" ng-controller="HeaderCtrl">							
-				<div class="back">
-					<a href="#/home"><i class="fa fa-angle-left fa-3x" ng-if="page === 'post'"></i></a>
-				</div>
-				<div class="header" ng-show="title">						
-					<h1 ng-bind="title"></h1>
-					<h3 ng-bind="subtitle"></h3>
-				</div>	
-				<div class="search fa-1.2x">
-					<i class="fa fa-search"></i>
-					<input type="text" class="search-box">
-				</div>							
-			</div>			
+		<div class="page-container">			
 			<ui-view></ui-view>			
 		</div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>

@@ -24,6 +24,10 @@ a {
   color: inherit;
 }
 
+.push-right {
+	float: right !important;
+}
+
 .row {	
 	margin-bottom: 2%;	
 	position: relative;	
@@ -76,12 +80,12 @@ a {
 	margin-right: 20px;	
 }
 
-.fa {
+.fa-search {
 	font-size: 1.2em;
+	margin-right: 10px;
 }
 
-.search > input {
-	padding: 1%;
+.search > input {	
 	width: 0;
 	border: none;
 	border-bottom: 1px solid;
@@ -89,17 +93,20 @@ a {
 
 .search >input:focus {
 	width: 66%;
+	padding: 1%;
 	outline: none !important;	
 	border-bottom: 1px solid;
 }
 
 .search:hover > input {
 	width: 66%;
+	padding: 1%;
 	transition: all 1s ease;
 	-webkit-transition: all 1s ease;
 	-moz-transition: all 1s ease;
 	-ms-transition: all 1s ease;
 }
+
 
 
 .post-container {	
