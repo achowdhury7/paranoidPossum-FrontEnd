@@ -89,6 +89,7 @@ a {
 	width: 0;
 	border: none;
 	border-bottom: 1px solid;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .search >input:focus {
@@ -238,10 +239,14 @@ a {
 	bottom: 0;
 	margin-bottom: -1%;
 	width: 100%;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
 	-webkit-animation: fadeIn 2s;
 	-moz-animation: fadeIn 2s;
 	-ms-animation: fadeIn 2s;
-	-0-animation: fadeIn 2s;
+	-o-animation: fadeIn 2s;
 	animation: fadeIn 2s;
 }
 
